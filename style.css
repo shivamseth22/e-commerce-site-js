@@ -1,22 +1,41 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+body {
     width: 100%;
 }
 
 /* header */
 
-#header{
-
+#header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
     background-color: #e3e6f3;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
     border-bottom: 2px solid #088178;
     z-index: 999;
     position: sticky;
@@ -25,21 +44,20 @@ body{
     height: 85px;
 }
 
-#navbar{
+#navbar {
     display: flex;
     align-items: center;
     justify-content: center;
-   
 }
 
-#navbar li{
+#navbar li {
     list-style: none;
     padding: 0 20px;
     color: black;
     position: relative;
 }
 
-#navbar li a{
+#navbar li a {
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
@@ -49,35 +67,43 @@ body{
 }
 
 #navbar li a:hover,
-#navbar li a.active{
-    color:#01736c ;
+#navbar li a.active {
+    color: #01736c;
 }
 
-
 #navbar li a.active::after,
-#navbar li a:hover::after{
+#navbar li a:hover::after {
     content: "";
-    width:30%;
-    height:2px ;
+    width: 30%;
+    height: 2px;
     background: #088178;
     position: absolute;
     bottom: -4px;
     left: 20px;
 }
 
-.logo{
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
+.logo {
+    height: 50px;
+    width: 110px;
+    /* border-radius: 50%; */
 }
 
 /* home page */
 
-#hero{
+#hero {
+    display: flex;
     background-color: #e3e6f3;
-    background-image: url("pngwing.com.png");
-    background-repeat: no-repeat;
-    background-position: top -10% right 15% ;
+    background-position: top -10% right 15%;
+    height: 90vh;
+    width: 100%;
+    padding: 0% 100px;
+}
+
+#hero .hero-sub-1 {
+
+    /* background-image: url("pngwing.com.png"); */
+    /* background-repeat: no-repeat; */
+
     height: 90vh;
     width: 100%;
     padding: 0% 100px;
@@ -89,22 +115,33 @@ body{
     font-size: 30px;
 }
 
+#hero .hero-sub-2 {
+    margin-right: 70px;
+}
 
-#hero h4{
+#hero .hero-sub-2 img {
+    height: 90vh;
+}
+
+
+#hero h4 {
     padding-bottom: 15px;
 }
-#hero h1{
-   color: #088178;
-   padding-bottom: 15px;
+
+#hero h1 {
+    color: #088178;
+    padding-bottom: 15px;
 }
-#hero p{
+
+#hero p {
     padding-bottom: 10px;
 }
-#hero button{
+
+#hero button {
     background-image: url();
     /* background-color: transparent; */
     color: #088178;
-    border: 3px solid black ;
+    border: 3px solid black;
     border-radius: 5px;
     padding: 10px;
     /* margin-left: 100px; */
@@ -112,6 +149,76 @@ body{
     cursor: pointer;
     font-weight: 600;
 }
-#hero h4{
+
+#hero h4 {
     padding-bottom: 15px;
+}
+
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fe-box img {
+    height: 150px;
+    width: 170px;
+}
+#feature .fe-box{
+    width: 210px;
+    text-align: center;
+    padding:25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    /* border: 0.05px solid black; */
+    margin: 15px 0;
+}
+
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(0, 0, 0, 0.2);
+}
+
+#feature .fe-box h6{
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    /* color: #088178; */
+    background-color: rgb(255, 206, 206);
+}
+.pro-container img{
+    height: 200px;
+    width: 200px;
+}
+#product1{
+    text-align: center;
+}
+#product1 .pro{
+    width: 23%;
+    min-height: 250px;
+    padding: 10px 12px;
+    border: 1px solid black;
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15xp 0;
+    transition: 0.2s ease;
+
+}
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+#product1 .pro .des span{
+    color: #606063;
+    font-size: 12px;
+}
+#product1 .pro .des h5{
+    padding: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+.pro-container{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
 }
